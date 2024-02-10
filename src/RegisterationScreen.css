@@ -1,0 +1,66 @@
+.register{
+    max-width: 375px;
+    margin:auto;
+    padding:0px 24px 0px 24px;
+    text-align: left;
+}
+.register__subtitle--margin-top{
+    margin-top: 48px;
+}
+.register__subtitle--margin-bottom{
+    margin-top: 16px;
+}
+.require{
+    margin-left: 8px;
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 2px;
+
+}
+.gender-input__label{
+    margin-bottom: 8px;
+   
+}
+.register__submit-btn{
+    width: auto;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #949497;;
+    border-width: 0px;
+    color: #FFFFFF;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+.register__return-btn{
+    width: auto;
+    height: 56px;
+    border-radius: 8px;
+    border-color: #0017C1;
+    background-color:#FFFFFF;
+    border-width: 1px;
+    padding: 16px;
+    color: #0017C1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.register__btn-group{
+    display: grid;
+    grid-row-gap: 4px;
+    
+}
+.register__btn-group--margin-top{
+    margin-top: 48px;
+}
+
+.active-next-btn{
+    background-color: #0017C1;
+    color:white;
+}

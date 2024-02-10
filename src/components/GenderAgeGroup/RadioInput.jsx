@@ -1,3 +1,5 @@
+import "./RadioInput.css";
+
 const Radio = ({ name, label }) => {
   return (
     <div className="gender">

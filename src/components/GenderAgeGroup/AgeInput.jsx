@@ -1,3 +1,5 @@
+import "./AgeInput.css";
+
 const Age = ({ label, name, register, error }) => {
   return (
     <div className="age-input age-input--margin-top">
@@ -20,7 +22,7 @@ const Age = ({ label, name, register, error }) => {
         }`}
         maxLength="3"
       />
-      {error && <p className="error-msg">{error}</p>}
+      {error && <p className="age-error-msg">{error}</p>}
     </div>
   );
 };

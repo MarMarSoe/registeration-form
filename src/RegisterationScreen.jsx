@@ -1,8 +1,9 @@
-import Title from "./Title";
-import "./RegisterForm.css";
-import GenderAgeInput from "./AgeGender/GenderAgeInput";
+import "./RegisterationScreen.css";
 import { useForm } from "react-hook-form";
-import Input from "./Input";
+import Title from "./components/Title/Title";
+import Input from "./components/NameInputGroup/Input";
+import Radio from "./components/GenderAgeGroup/RadioInput";
+import Age from "./components/GenderAgeGroup/AgeInput";
 
 const RegisterForm = () => {
   const {
@@ -29,7 +30,7 @@ const RegisterForm = () => {
       <Title title="あなたの情報を入力してください" />
       <section>
         <Title title="名前" className="register__subtitle--margin-top" />
-        <div className="form-input ">
+        <div className="form-input">
           <Input
             register={register}
             label="姓"
@@ -57,13 +58,26 @@ const RegisterForm = () => {
           />
         </div>
       </section>
-      {/* <NameInput register={register} errors={errors} /> */}
-      <GenderAgeInput
-        label="性別"
-        name="gender"
-        register={register}
-        errors={errors}
-      />
+      <section>
+        <Title title="年齢・性別" />
+        <div className="gender">
+          <div className="gender-input gender-input--margin-top">
+            <label className="gender-input__label">
+              性別
+              <span className="require">必須</span>
+            </label>
+            <Radio label="男性" name="gender-selection" />
+            <Radio label="女性" name="gender-selection" />
+            <Radio label="無回答・その他" name="gender-selection" />
+            <Age
+              register={register}
+              label="年齢"
+              name="age"
+              error={errors.age && errors.age.message}
+            />
+          </div>
+        </div>
+      </section>
       <div className="register__btn-group register__btn-group--margin-top">
         <button
           className={`register__submit-btn ${

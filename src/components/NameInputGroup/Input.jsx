@@ -1,8 +1,8 @@
-import { useState } from "react";
+import "./Input.css";
 
 const Input = ({ label, name, register, error }) => {
   return (
-    <div className="form-input form-input--margin-top">
+    <div className="form-input">
       <label className="form-input__label">
         {label}
         <span className="require">必須</span>
@@ -19,7 +19,7 @@ const Input = ({ label, name, register, error }) => {
           error ? "form-input__box-color-error" : ""
         }`}
       />
-      {error && <p className="error-msg">{error}</p>}
+      {error && <p className="name-error-msg">{error}</p>}
     </div>
   );
 };

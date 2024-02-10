@@ -1,0 +1,31 @@
+.form-input{
+    display: grid;
+    grid-row-gap: 8px;
+}
+.form-input__label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+
+}
+.form-input__box{
+    width: auto;
+    height: 20px;
+    padding: 12px 16px 12px 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: #1A1A1C;
+    border-radius: 8px;
+    color:#1A1A1C;
+    outline: none;
+}
+.form-input__box-color-error{
+    border-color: #EC0000;
+}
+.name-error-msg{
+    font-weight: 400px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #EC0000;
+}

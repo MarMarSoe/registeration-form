@@ -1,0 +1,42 @@
+.age-input--margin-top{
+    margin-top: 16px;
+}
+.age-input__label{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 4px;
+
+}
+.age-input__label--margin-bottom{
+    margin-bottom: 8px;
+}
+.require{
+    margin-left: 8px;
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 2px;
+
+}
+.age-input__box{
+    width: 30px !important;
+    height: 20px;
+    padding: 12px 16px 12px 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: #1A1A1C;
+    border-radius: 8px;
+    color:#1A1A1C
+}
+.age-input__box-color-error{
+    border-color: #EC0000 !important;
+}
+.age-error-msg{
+    font-weight: 400px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #EC0000;
+}

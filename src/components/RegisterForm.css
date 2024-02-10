@@ -1,0 +1,154 @@
+
+.register{
+    max-width: 375px;
+    margin:auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: left;
+}
+.form-input{
+    display: grid;
+    grid-row-gap: 8px;
+}
+.form-input--margin-top{
+    margin-top: 16px;
+}
+.subtitle {
+    padding: 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 4px;
+}
+.register__subtitle--margin-top{
+    margin-top: 48px;
+}
+.register__subtitle--margin-bottom{
+    margin-top: 16px;
+}
+
+.form-input__label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+
+}
+.require{
+    margin-left: 8px;
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 2px;
+
+}
+.form-input__box{
+    width: -webkit-fill-available;
+    height: 20px;
+    padding: 12px 16px 12px 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: #1A1A1C;
+    border-radius: 8px;
+    color:#1A1A1C
+}
+.form-input__box-color-error{
+    border-color: #EC0000;
+}
+.form-input__box-color-origin{
+    border-color: #1A1A1C;
+}
+.age-input__box-color-error{
+    border-color: #EC0000;
+}
+.age-input__box-color-origin{
+    border-color: #1A1A1C;
+}
+.error-msg{
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #EC0000;
+
+}
+/* .gender{
+    display: grid;
+    grid-column-gap: 8px;
+    
+} */
+.gender__padding{
+    padding: 8px 0px 8px 0px
+}
+.gender-input__label{
+    margin-bottom: 8px;
+   
+}
+.age-input--margin-top{
+    margin-top: 16px;
+}
+.age-input__label{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 4px;
+
+}
+.age-input__label--margin-bottom{
+    margin-bottom: 8px;
+}
+.age-input__box{
+    width: 30px !important;
+    height: 20px;
+    padding: 12px 16px 12px 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: #1A1A1C;
+    border-radius: 8px;
+    color:#1A1A1C
+}
+
+.register__submit-btn{
+    width: -webkit-fill-available;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #949497;
+    color: #FFFFFF;
+    box-shadow: none;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+.register__return-btn{
+    width: -webkit-fill-available;
+    height: 56px;
+    border: 1;
+    border-radius: 8px;
+    border-color: #0017C1;
+    background-color:#FFFFFF;
+    box-shadow: none;
+    padding: 16px;
+    color: #0017C1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.register__btn-group{
+    display: grid;
+    grid-row-gap: 4px;
+    
+}
+.register__btn-group--margin-top{
+    margin-top: 48px;
+}
+
+.active-next-btn{
+    background-color: #0017C1;
+    color:white;
+}

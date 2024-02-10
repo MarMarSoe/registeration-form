@@ -1,8 +1,8 @@
 import Title from "./Title";
 import "./RegisterForm.css";
-import NameInput from "./Name/NameInput";
 import GenderAgeInput from "./AgeGender/GenderAgeInput";
 import { useForm } from "react-hook-form";
+import Input from "./Input";
 
 const RegisterForm = () => {
   const {
@@ -27,7 +27,37 @@ const RegisterForm = () => {
       })}
     >
       <Title title="あなたの情報を入力してください" />
-      <NameInput register={register} errors={errors} />
+      <section>
+        <Title title="名前" className="register__subtitle--margin-top" />
+        <div className="form-input ">
+          <Input
+            register={register}
+            label="姓"
+            error={errors.firstname && errors.firstname.message}
+            name="firstname"
+          />
+          <Input
+            register={register}
+            label="名"
+            errors={errors}
+            name="lastname"
+            error={errors.lastname && errors.lastname.message}
+          />
+          <Input
+            register={register}
+            label="氏（カタカナ）"
+            error={errors.firstnameKana && errors.firstnameKana.message}
+            name="firstnameKana"
+          />
+          <Input
+            register={register}
+            label="名（カタカナ）"
+            error={errors.lastnameKana && errors.lastnameKana.message}
+            name="lastnameKana"
+          />
+        </div>
+      </section>
+      {/* <NameInput register={register} errors={errors} /> */}
       <GenderAgeInput
         label="性別"
         name="gender"

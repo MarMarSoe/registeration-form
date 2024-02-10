@@ -23,6 +23,11 @@
 .form-input__box-color-error{
     border-color: #EC0000;
 }
+
+.form-input__box-color-focus{
+    border-color: #CD820A;
+}
+
 .name-error-msg{
     font-weight: 400px;
     font-size: 12px;

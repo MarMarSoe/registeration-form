@@ -1,6 +1,10 @@
+import {
+  composeValidators,
+  requireValidator,
+} from "../../validators/validators";
 import "./RadioInput.css";
 
-const RadioInput = ({ name, label }) => {
+const RadioInput = ({ name, label, register }) => {
   return (
     <div className="gender">
       <input
@@ -8,6 +12,7 @@ const RadioInput = ({ name, label }) => {
         className="gender__select"
         name={name}
         value={label}
+        {...register(name, composeValidators(requireValidator))}
       />
       <label className="gender__name" htmlFor={name}>
         {label}

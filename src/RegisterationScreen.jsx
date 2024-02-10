@@ -18,6 +18,7 @@ const RegisterForm = () => {
       firstnameKana: "",
       lastnameKana: "",
       age: "",
+      gender: "",
     },
   });
   return (
@@ -69,9 +70,13 @@ const RegisterForm = () => {
               性別
               <span className="require">必須</span>
             </label>
-            <RadioInput label="男性" name="gender-selection" />
-            <RadioInput label="女性" name="gender-selection" />
-            <RadioInput label="無回答・その他" name="gender-selection" />
+            <RadioInput label="男性" name="gender" register={register} />
+            <RadioInput label="女性" name="gender" register={register} />
+            <RadioInput
+              label="無回答・その他"
+              name="gender"
+              register={register}
+            />
             <AgeInput
               register={register}
               label="年齢"

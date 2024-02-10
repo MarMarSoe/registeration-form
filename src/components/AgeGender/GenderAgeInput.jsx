@@ -16,8 +16,12 @@ const GenderAgeInput = ({ name, label, register, errors }) => {
         <Radio label="男性" name="gender-selection" />
         <Radio label="女性" name="gender-selection" />
         <Radio label="無回答・その他" name="gender-selection" />
-        <Age register={register} label="年齢" errors={errors} name="age" />
-        {errors.age && <p className="error-msg">{errors.age.message}</p>}
+        <Age
+          register={register}
+          label="年齢"
+          name="age"
+          error={errors.age && errors.age.message}
+        />
       </div>
     </div>
   );

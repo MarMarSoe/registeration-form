@@ -1,6 +1,6 @@
 const Radio = ({ name, label }) => {
   return (
-    <div className="gender gender__padding">
+    <div className="gender">
       <input
         type="radio"
         className="gender__select"

@@ -1,4 +1,4 @@
-const Age = ({ label, name, register, isValid, isDirty }) => {
+const Age = ({ label, name, register, error }) => {
   return (
     <div className="age-input age-input--margin-top">
       <label className="age-input__label age-input__label--margin-bottom">
@@ -16,11 +16,11 @@ const Age = ({ label, name, register, isValid, isDirty }) => {
           },
         })}
         className={`age-input__box ${
-          isValid ? "age-input__box-color-error" : ""
+          error ? "age-input__box-color-error" : ""
         }`}
-        defaultValue="username"
         maxLength="3"
       />
+      {error && <p className="error-msg">{error}</p>}
     </div>
   );
 };

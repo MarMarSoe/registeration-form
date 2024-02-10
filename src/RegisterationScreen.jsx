@@ -29,7 +29,10 @@ const RegisterForm = () => {
     >
       <Title title="あなたの情報を入力してください" />
       <section>
-        <Title title="名前" className="register__subtitle--margin-top" />
+        <Title
+          title="名前"
+          className="register__subtitle register__subtitle--margin-top"
+        />
         <div className="name-input name-input-y-gap">
           <Input
             register={register}
@@ -78,7 +81,7 @@ const RegisterForm = () => {
           </div>
         </div>
       </section>
-      <div className="register__btn-group register__btn-group--margin-top">
+      <div className="register__btn-group">
         <button
           className={`register__submit-btn ${
             isValid ? "active-next-btn" : ""

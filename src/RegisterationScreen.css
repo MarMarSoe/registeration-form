@@ -3,11 +3,16 @@
     margin:auto;
     padding:0px 24px 0px 24px;
     text-align: left;
+    display: grid;
+    grid-row-gap: 48px;
 }
 .register__subtitle--margin-top{
     margin-top: 48px;
 }
 .register__subtitle--margin-bottom{
+    margin-top: 16px;
+}
+.name-input{
     margin-top: 16px;
 }
 .name-input-y-gap{
@@ -58,9 +63,6 @@
     display: grid;
     grid-row-gap: 4px;
     
-}
-.register__btn-group--margin-top{
-    margin-top: 48px;
 }
 
 .active-next-btn{

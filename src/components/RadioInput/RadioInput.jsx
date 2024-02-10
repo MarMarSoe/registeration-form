@@ -1,6 +1,6 @@
 import "./RadioInput.css";
 
-const Radio = ({ name, label }) => {
+const RadioInput = ({ name, label }) => {
   return (
     <div className="gender">
       <input
@@ -16,4 +16,4 @@ const Radio = ({ name, label }) => {
   );
 };
 
-export default Radio;
+export default RadioInput;

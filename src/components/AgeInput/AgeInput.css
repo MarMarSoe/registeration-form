@@ -32,8 +32,12 @@
     color:#1A1A1C;
     outline: none;
 }
+
 .age-input__box-color-error{
     border-color: #EC0000 !important;
+}
+.age-input__box-color-origin{
+    border-color: #CD820A !important;
 }
 .age-error-msg{
     font-weight: 400px;

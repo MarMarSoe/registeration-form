@@ -1,6 +1,6 @@
 import "./AgeInput.css";
 
-const Age = ({ label, name, register, error }) => {
+const AgeInput = ({ label, name, register, error }) => {
   return (
     <div className="age-input age-input--margin-top">
       <label className="age-input__label age-input__label--margin-bottom">
@@ -10,8 +10,6 @@ const Age = ({ label, name, register, error }) => {
       <input
         {...register(name, {
           required: true,
-          min: 1,
-          max: 100,
           pattern: {
             value: /^[0-9\b]+$/,
             message: "半角数字以外は使用できません",
@@ -19,12 +17,12 @@ const Age = ({ label, name, register, error }) => {
         })}
         className={`age-input__box ${
           error ? "age-input__box-color-error" : ""
-        }`}
-        maxLength="3"
+        } `}
+        maxLength="2"
       />
       {error && <p className="age-error-msg">{error}</p>}
     </div>
   );
 };
 
-export default Age;
+export default AgeInput;

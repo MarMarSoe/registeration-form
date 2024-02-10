@@ -1,9 +1,9 @@
 import "./RegisterationScreen.css";
 import { useForm } from "react-hook-form";
 import Title from "./components/Title/Title";
-import Input from "./components/NameInputGroup/Input";
-import Radio from "./components/GenderAgeGroup/RadioInput";
-import Age from "./components/GenderAgeGroup/AgeInput";
+import Input from "./components/Input/Input";
+import Radio from "./components/RadioInput/RadioInput";
+import Age from "./components/AgeInput/AgeInput";
 
 const RegisterForm = () => {
   const {
@@ -30,7 +30,7 @@ const RegisterForm = () => {
       <Title title="あなたの情報を入力してください" />
       <section>
         <Title title="名前" className="register__subtitle--margin-top" />
-        <div className="form-input">
+        <div className="name-input name-input-y-gap">
           <Input
             register={register}
             label="姓"

@@ -10,6 +10,10 @@
 .register__subtitle--margin-bottom{
     margin-top: 16px;
 }
+.name-input-y-gap{
+    display: grid;
+    grid-row-gap: 8px;
+}
 .require{
     margin-left: 8px;
     color: red;
@@ -50,7 +54,6 @@
     line-height: 24px;
     letter-spacing: 2px;
 }
-
 .register__btn-group{
     display: grid;
     grid-row-gap: 4px;

@@ -17,7 +17,7 @@
 }
 .name-input-y-gap{
     display: grid;
-    grid-row-gap: 8px;
+    grid-row-gap: 16px;
 }
 .require{
     margin-left: 8px;

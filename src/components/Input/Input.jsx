@@ -1,5 +1,10 @@
 import { useState } from "react";
 import "./Input.css";
+import {
+  characterCheckValidator,
+  composeValidators,
+  requireValidator,
+} from "../../validators/validators";
 
 const Input = ({ label, name, register, error }) => {
   const [isFocus, setIsFocus] = useState(false);
@@ -11,13 +16,10 @@ const Input = ({ label, name, register, error }) => {
         <span className="require">必須</span>
       </label>
       <input
-        {...register(name, {
-          required: true,
-          pattern: {
-            value: /^[A-Za-z]+$/i,
-            message: "記号・数字は使用できません",
-          },
-        })}
+        {...register(
+          name,
+          composeValidators(requireValidator, characterCheckValidator)
+        )}
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
         className={`form-input__box ${

@@ -1,8 +1,12 @@
 import { useState } from "react";
 import "./AgeInput.css";
+import {
+  ageValidator,
+  composeValidators,
+  requireValidator,
+} from "../../validators/validators";
 
 const AgeInput = ({ label, name, register, error }) => {
-
   const [isFocus, setIsFocus] = useState(false);
 
   return (
@@ -12,17 +16,15 @@ const AgeInput = ({ label, name, register, error }) => {
         <span className="require">必須</span>
       </label>
       <input
-        {...register(name, {
-          required: true,
-          pattern: {
-            value: /^[0-9\b]+$/,
-            message: "半角数字以外は使用できません",
-          },
-        })}
+        {...register(name, composeValidators(requireValidator, ageValidator))}
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
         className={`age-input__box ${
-          error ? "age-input__box-color-error" : isFocus ? "age-input__box-color-focus" : ""
+          error
+            ? "age-input__box-color-error"
+            : isFocus
+            ? "age-input__box-color-focus"
+            : ""
         } `}
         maxLength="2"
       />

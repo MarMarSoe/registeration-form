@@ -1,4 +1,4 @@
-const Input = ({ label, name, register, isValid, isDirty }) => {
+const Input = ({ label, name, register, error }) => {
   return (
     <div className="form-input form-input--margin-top">
       <label className="form-input__label">
@@ -13,17 +13,13 @@ const Input = ({ label, name, register, isValid, isDirty }) => {
             message: "記号・数字は使用できません",
           },
         })}
-        className={`form-input__box `}
-        defaultValue="username"
+        className={`form-input__box ${
+          error ? "form-input__box-color-error" : ""
+        }`}
       />
+      {error && <p className="error-msg">{error}</p>}
     </div>
   );
 };
 
 export default Input;
-
-// ${
-//   isDirty && !isValid
-//     ? "form-input__box-color-error"
-//     : "form-input__box-color-origin"
-// }

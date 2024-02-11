@@ -62,7 +62,6 @@
 .register__btn-group{
     display: grid;
     grid-row-gap: 4px;
-    
 }
 
 .active-next-btn{

@@ -9,6 +9,7 @@ const RegisterForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isValid },
   } = useForm({
     mode: "onChange",
@@ -24,8 +25,9 @@ const RegisterForm = () => {
   return (
     <form
       className="register"
-      onSubmit={handleSubmit((data) => {
+      onSubmit={handleSubmit(() => {
         alert("Completed!!!");
+        reset();
       })}
     >
       <Title title="あなたの情報を入力してください" />

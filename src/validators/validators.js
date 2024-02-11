@@ -16,7 +16,7 @@ export const ageValidator = () => {
 export const characterCheckValidator = () => {
   return {
     pattern: {
-      value: /^'?\p{L}+(?:['\s]\p{L}+)*'?$/u,
+      value: /^'?\p{L}+(?:['\s ]\p{L}+)*'?\s*$/u,
       message: "記号・数字は使用できません",
     },
   };
